@@ -1,0 +1,18 @@
+<div id="content">
+<h1>Inserting Keyframes</h1>
+<p ng-if="ctrl.story" class="story">By setting keyframes, you can make the ball jump upwards, out of the path of the oncoming arrow.</p>
+<ol>
+<li>Right-click on the sphere in the middle of the screen to ensure that it's selected. Selected objects have an orange outline.
+<li>Using the left mouse button or arrow keys, go frame <span class="framenum">{{ctrl.frameNum(1)}}</span><span ng-if="ctrl.story" class="story">, just before the arrow strikes</span>.</li>
+<li>With your cursor hovering over the 3D view panel (where you can see the ball), press <strong>I</strong>, and choose "Location"; this inserts a keyframe at frame <span class="framenum">{{ctrl.frameNum(1)}}</span>, which remembers the current location of the sphere. Move the current frame (green line) away from frame <span class="framenum">{{ctrl.frameNum(1)}}</span>, and you will see that there is a yellow line left behind on the timeline. Yellow lines indicate where keyframes for the selected object have been inserted.</li>
+<li>Go to frame <span class="framenum">{{ctrl.frameNum(11)}}</span>, using the left mouse button or arrow keys.</li>
+<li>With the sphere still selected, pull upwards on the sphere's up (blue) arrow to move it a few sphere-heighths above its starting position.<br>
+      <img src="./tutorial/balllift.png" class="img-responsive" width="300px">
+</li>
+<li>With your cursor over the 3D view panel, press  <strong>I</strong>  again, and insert another Location keyframe.</li>
+<li>Now try scrubbing with the left mouse button between the two yellow lines in the timeline, and watch the sphere move smoothly between the two positions you set as keyframes.</li>
+<li>Press the <strong>OPTION + A</strong> keys, and Blender will automatically cycle through the timeline for you, animating the cube as it goes. The sphere will hang in the air after it gets to frame <span class="framenum">{{ctrl.frameNum(11)}}</span>, because by default the animation will run until frame <span ng-if="ctrl.story" class="story">179</span><span ng-if="!ctrl.story" class="nostory">{{ctrl.frameNum(35)}}</span>. Press <strong>ESC</strong> to stop the animation.
+</ol>
+
+<button class="btn btn-primary" ng-click="ctrl.popupShortSurvey(1)">Survey</button>
+</div>

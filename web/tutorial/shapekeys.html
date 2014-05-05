@@ -1,0 +1,36 @@
+<div id="content">
+<h1>Creating Lattice Shape Keys</h1>
+<p>You can save distorted versions of an object as <strong>shape keys</strong>. Shape keys make it easier to animate complex objects. </p>
+
+<p>You will be using a shape key to make the ball squash and stretch as it bounces.</p>
+
+<p>To create shape keys for the ball, do the following:</p>
+<ol>
+<li>Right-click the lattice to select it.</li>
+<li>In the far right panel, click on the Object Data (grid) icon.<br>
+ <img src="./tutorial/gridicon.png" class="img-responsive" width="300px"></li>
+<li>Under the Shape Keys header, press the plus button. This adds a "Basis" shape key to the lattice that captures the ball's current, undistorted shape.</li>
+<li>Press the plus button again to add another shape key, "Key 1".</li>
+<li>Select "Key 1", and use the text box below to rename it "Squish".</li>
+</ol>
+
+<p>Now, modify the shape key to make a squished shape:</p>
+<ol>
+<li>With your cursor over the 3D view panel, press <strong>TAB</strong> to enter Edit mode. In Edit mode you can change objects' shapes.</li>
+<li>Press the <strong>1</strong> key to change to a side perspective</li>
+<li>With your left mouse button, click in the middle of the lattice. This moves the 3D cursor to the point where you clicked. Any changes you make to the lattice will be centered on the 3D cursor.</li>
+<li>Press the <strong>3</strong> key to change to a different side perspective. Again, left-click in the middle of the lattice to center the 3D cursor.</li>
+<li>Press <strong>B</strong> while clicking and dragging with the left mouse button to box-select the lattice's bottom vertices. Left click to confirm your selection.</li>
+<li>Press <strong>S</strong>, then move your cursor away from the ball to scale the bottom vertices, making the bottom of the ball much wider.</li>
+<li>Left-click just below the sphere, moving the 3D cursor to the bottom of the lattice.</li>
+<li>Box-select all the lattice's vertices by pressing <strong>B</strong> while left-clicking and dragging.</li>
+<li>Press <strong>S</strong>, then <strong>Z</strong>, then move your cursor to scale just along the Z (vertical) axis, squishing the ball to half its original height.</li>
+<li>Pull down on the lattice's vertical arrow to lower the ball to the ground (horizontal green line).<br>
+At this point, your ball should look something like this:<br>
+ <img src="./tutorial/squishkey.png" class="img-responsive" width="300px"></li>
+<li>With your cursor over the 3D view panel, press <strong>TAB</strong> to return to exit Edit mode and return to Object mode.</li>
+</ol>
+<p>Note that when you return to Object Mode, the cube snaps back to the basis shape. That's because the value of the Squish shape key is currently set to zero. If you select "Squish" from the panel on the right and crank its value up to 1.000 you can see that the ball deforms into the squished shape you just made.
+
+<button class="btn btn-primary" ng-click="ctrl.popupShortSurvey(3)">Survey</button>
+</div>

@@ -1,0 +1,42 @@
+<div id="content">
+<h1>Working With Lattices</h1>
+
+<p ng-if="ctrl.story" class="story">You've dodged the arrow, but now you need to bring the red ball safely back to earth. Use lattices to give the ball a soft, bouncy landing, so he doesn't crack apart like Humpty Dumpty.</p>
+<p ng-if="!ctrl.story" class="nostory">Next, you will learn how to use a lattice to make the ball squash and stretch.</p>
+
+ <p>A lattice is a simple container that can be used to temporarily deform and manipulate a complex object. Because it is really the lattice that gets deformed, not the underlying object, it remains easy to return the object to its original shape.</p> 
+ 
+ <p>To create a lattice, do the following:</p> 
+ <ol>
+ <li>Set the current frame to 1.</li>
+ <li>Left click on an empty space just to the left of the ball. Wherever you click, that is where the lattice will be added in the next step.</li>
+ <li>With your cursor over the 3D View Panel (in which the ball is visible) press <strong>SHIFT+A</strong>, and select "Lattice".</li>
+ </ol>
+
+ <p>The default Lattice looks like a wireframe cube when first added. The Lattice can be moved, resized and rotated like any other Blender Object. However, when you deselect it, it will lock onto any objects that it currently surrounds, so don't deselect the lattice until it's exactly where you want it to be.</p>
+<ol>
+  <li>Press the <strong>1</strong> key to switch to a side perspective of the ball and lattice. If necessary, use your mouse's scroll wheel to zoom in or out.
+  <li>Resize the lattice by pressing the <strong>S</strong> key and then moving the mouse away from the center of the lattice until the lattice appears slightly larger than the ball, then click with your left mouse button to accept the change.
+  <li>Center the lattice on the ball. Pull the arrows emininating from the center of the lattice or press <strong>G</strong> to move it freely.</li>
+  <li>Switch between perspectives by pressing the <strong>1</strong>, <strong>3</strong>, <strong>7</strong>, and <strong>0</strong> keys, and make sure the lattice is centered over the ball in each perspective.</li>
+</ol>
+<p>(If you deselected the lattice prematurely, it will become partially stuck to the ball, and you will need to delete it and start over. To delete the lattice, select the lattice, press the <strong>X</strong> key, and select <strong>Delete</strong>.)</p>
+
+
+<h3>Connecting a Lattice to an Object</h3>
+
+<p>On its own, a Lattice serves no purpose, as it can't be seen in a rendered image. Its only use is to manipulate another object, in this case the ball, and so we need to fully associate that other object with the lattice.</p>
+
+<ol>
+<li>Right click on the ball to select it.</li>
+<li>In the far right panel, click on wrench icon (Object Modifiers).<br>
+      <img src="./tutorial/wrenchicon.png" class="img-responsive" width="300px">
+</li>
+<li>From the Add Modifier menu, select Lattice.</li>
+<li>From the Object menu, select Lattice. <br>
+<img src="./tutorial/objectmenu.png" class="img-responsive" width="300px"></li>
+</ol>
+<p>Now the ball is attached to the lattice. When you manipulate the lattice, you will manipulate the ball as well.</p>
+
+<button class="btn btn-primary" ng-click="ctrl.popupShortSurvey(2)">Survey</button>
+</div>

@@ -1,0 +1,16 @@
+
+<h1>Welcome to Blender.</h1>
+
+<p>Blender is a powerful 3D modelling and animation program. It can be used to create visual effects, art, 3D video games, animated films, and more.</p>
+<p>In the window you just opened, you should see <span ng-if="!ctrl.story" class="nostory">a red sphere</span><span ng-if="ctrl.story" class="story">the red ball</span>.</p>
+<p ng-if="ctrl.story" class="story">You can use Blender's animation tools to move the red ball out of the path of the oncoming arrow. However, before you begin animating, you need to learn about how 3D animation works, starting with the concept of frames and keyframes.</p>
+<p ng-if="!ctrl.story" class="nostory"> Before you begin animating, you'll need to learn about how 3D animation works, starting with the concept of frames and keyframes.</p>
+
+
+<h3>Animation Basics</h3>
+<p><img src="./tutorial/motion_keyframes.png">
+<p>A <strong>frame</strong> is a snapshot of the scene at one moment in time. An animation consists of displaying a succession of frames representing successive moments in time; if these are shown sufficiently quickly (at least 24 frames per second), the eye is fooled into seeing smooth movement, instead of a succession of still poses.</p>
+<p>In live action video, we can capture the frames simply by letting the camera record as the scene unfolds. In hand-drawn animation (cartoons), each frame had to be drawn by a human animator. The most skilled artists would create <strong>keyframes</strong> representing pivotal points in the animation (for example, starting and ending poses in a character's movement), and the lower-paid assistants would have the job of filling in all the intermediate frames to produce smooth movement between those endpoints.</p>
+<p>Computer animation works in a similar way, except here Blender is your lower-paid assistant. You go to crucial points in the timeline of your animation, position and pose your objects/characters appropriately, and tell Blender that this is a keyframe for the relevant transformations (positioning/rotation/scaling) of those objects/characters. Then when you run the animation, Blender will interpolate the specified transformation parameters between keyframes, giving you smooth motion over those intervals.</p>
+
+<button class="btn btn-primary" ng-click="ctrl.nextPage()">Next</button>

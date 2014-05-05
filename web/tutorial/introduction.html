@@ -1,0 +1,16 @@
+
+
+<video width="853" height="480" controls autoplay>
+  <source src="./tutorial/{{ctrl.getActiveVideo()}}" type="video/webm">
+Your browser does not support the video tag.
+</video>
+
+<div ng-if="!ctrl.story" class="nostory">
+<p>In this tutorial, you will learn to create the above 3D animation using an application called Blender. Press play if you'd like to view the video again.</p>
+</div>
+
+<div ng-if="ctrl.story" class="story">
+<p ng-if="ctrl.story" class="story">That defenceless red ball is about to be hit by an arrow! But you can help him jump out of the way using the power of Blender.</p>
+</div>
+
+<p style="text-align:center"><button class="btn btn-warning btn-lg" ng-click="ctrl.launchBlender()">Begin<span ng-if="!ctrl.story"> Tutorial</span></button> <!--opens redball.blend--></p>

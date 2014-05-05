@@ -1,0 +1,27 @@
+<div id="content">
+<h1>Animating With Shape Keys</h1>
+
+<p>Next, you'll want to use the Shape Key editor to add the squish effect to your animation. The Shape Key editor is the upper timeline in your Blender window. Under the heading "DopeSheet Summary" you should see your "Squish" shape key listed.</p>
+<p>First, add some squish to the beginning of the ball's jump:
+<ol>
+<li>Go to frame <span class="framenum">{{ctrl.frameNum(-2)}}</span>. Set Squish to 0.000.<br>
+      <img src="./tutorial/setsquish.gif" class="img-responsive" width="300px">
+</li>
+<li>Go to frame <span class="framenum">{{ctrl.frameNum(1)}}</span>. Set Squish to 1.000.</li>
+<li>Go to frame <span class="framenum">{{ctrl.frameNum(4)}}</span>. Set Squish to 0.000.</li>
+<li>Left-click and drag along the timeline (scrub) to preview.</li>
+</ol>
+
+And now the final landing:
+<ol>
+<li>Go to frame <span class="framenum">{{ctrl.frameNum(13)}}</span>. Without moving the ball, set the location keyframe. (Press I and select "Location".)
+<li>Go to frame <span class="framenum">{{ctrl.frameNum(23)}}</span>. Move the ball back to its start position, resting on the ground. With your cursor over the 3D view panel, press <strong>I</strong> and select "Location" to set a location keyframe.</li>
+<li>Right click the lattice to select it. Set Squish to 0.000.</li>
+<li>Go to frame <span class="framenum">{{ctrl.frameNum(26)}}</span>. Set Squish to 1.000.
+<li>Go to frame <span class="framenum">{{ctrl.frameNum(29)}}</span>. Set Squish to 0.000.
+</ol>
+
+<p>Press <strong>OPTION+A</strong> to watch a preview of the animation. Press <strong>ESC</strong> to stop the preview.</p>
+
+<button class="btn btn-primary" ng-click="ctrl.popupShortSurvey(4)">Survey</button>
+</div>

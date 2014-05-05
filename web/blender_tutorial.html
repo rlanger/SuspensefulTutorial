@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html ng-app>
+<head>
+<meta charset="utf-8">
+<title>Blender Tutorial</title>
+  <link href="//fonts.googleapis.com/css?family=Droid+Serif:400italic,400,700italic,700" rel="stylesheet" type="text/css">
+
+<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Domine:400,700" rel="stylesheet" type="text/css">
+
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="blender_tutorial.css">
+</head>
+
+<body>
+
+  <div tutorial-content>
+  
+  <div class="container">
+  
+  <div class="row">
+    <h1>Blender Tutorial</h1>
+  
+  <div class="col-sm-3">
+    
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="page in ctrl.pages" ng-click="ctrl.navMenuGoTo(page)" ng-class="{active: page==ctrl.pages[ctrl.currentPageIndex], disabled: $index > ctrl.furthestPageIndex}">
+        {{page.name}}</li>
+    </ul>
+    
+    <p class="toggle" ng-click="ctrl.toggleStory()"> </p>
+    
+    <!--p ng-click="ctrl.goTo(ctrl.quickref)">Quick Reference</p-->
+ </div> <!-- col -->
+ <div class="col-sm-9">
+
+    <div ng-include="{{ctrl.currentURL}}"></div>
+
+</div><!-- col -->
+</div><!-- row -->
+</div><!-- container -->
+
+  <!-- tutorial-content -->
+</div>
+  <script type="application/dart" src="main.dart"></script>
+  <script src="packages/browser/dart.js" type="text/javascript"></script>
+
+</body>
+</html>

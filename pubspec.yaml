@@ -1,0 +1,5 @@
+name: experiment
+description: A sample web application
+dependencies:
+  angular: '>=0.9.9 <0.10.0'
+  browser: any

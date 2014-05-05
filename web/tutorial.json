@@ -1,0 +1,42 @@
+[
+  {
+    "name":"Welcome",
+    "contentURL":"./tutorial/welcome.html"
+  },
+  {
+    "name":"Introduction",
+    "contentURL":"./tutorial/introduction.html"
+  },
+  {
+    "name":"Welcome to Blender",
+    "contentURL":"./tutorial/blender.html"
+  },
+  {
+    "name":"Navigating the Timeline",
+    "contentURL":"./tutorial/timeline.html"
+  },
+  {
+    "name":"Inserting Keyframes",
+    "contentURL":"./tutorial/simple_keyframes.html"
+  },
+  {
+    "name":"But Wait...",
+    "contentURL":"./tutorial/storyinset.html"
+  },
+  {
+    "name":"Lattices",
+    "contentURL":"./tutorial/lattices.html"
+  },
+  {
+    "name":"Creating Shape Keys",
+    "contentURL":"./tutorial/shapekeys.html"
+  },
+  {
+    "name":"Animating With Shape Keys",
+    "contentURL":"./tutorial/shapekey_animation.html"
+  },
+  {
+    "name":"Rendering Your Animation",
+    "contentURL":"./tutorial/render.html"
+  }
+]

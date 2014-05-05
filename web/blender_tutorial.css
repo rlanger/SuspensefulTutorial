@@ -1,0 +1,77 @@
+body {
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin: 15px;
+  font-family: "Domine";
+}
+
+h1, p {
+  color: #333;
+}
+
+h1 {
+  font-family: "Oswald";
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-family: "Oswald";
+}
+
+#sample_container_id {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.btn {
+  font-size: 20px;
+}
+
+.story {
+}
+
+.nostory {
+}
+
+.framenum{
+}
+
+.hidden {
+  display: none;
+}
+
+td
+{
+  padding: 15px;
+  vertical-align: top; 
+}
+
+.list-group > li {
+    cursor: pointer;
+    font-family: "Oswald";
+}
+
+.list-group > li.disabled {
+  color: #999999;
+}
+.list-group > li.disabled:hover,
+.list-group > li.disabled:focus {
+  color: #999999;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.keyname {
+  font-family: "Droid Serif";
+}
+
+.toggle {
+  color: #DDD;
+}
